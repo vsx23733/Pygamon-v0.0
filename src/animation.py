@@ -1,10 +1,12 @@
 import pygame
+import os
 
 class AnimateSprite(pygame.sprite.Sprite):
     
     def __init__(self, name) -> None:
         super().__init__()
-        self.sprite_sheet = pygame.image.load(f'C:/Users/axelo/Documents/Projects/pygamon-main/sprites/{name}.png')
+        base_path = os.path.join(os.path.dirname(__file__), '../sprites')
+        self.sprite_sheet = pygame.image.load(os.path.join(base_path, f'{name}.png'))
         self.animation_index = 0
         self.clock = 0
         self.default_speed = 0.3

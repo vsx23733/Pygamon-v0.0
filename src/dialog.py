@@ -1,15 +1,16 @@
 import pygame
-
+import os
 class DialogBox:
     X_POSITION = 0
     Y_POSITION= 470
     
     def __init__(self) -> None:
-        self.box = pygame.image.load('C:/Users/axelo/Documents/Projects/pygamon-main/dialogs/dialog_box.png')
+        base_path = os.path.join(os.path.dirname(__file__), '../dialogs')
+        self.box = pygame.image.load(os.path.join(base_path, 'dialog_box.png'))
         self.box = pygame.transform.scale(self.box, (700,100))
         self.text_index = 0
         self.letter_index = 0
-        self.font = pygame.font.Font('C:/Users/axelo/Documents/Projects/pygamon-main/dialogs/dialog_font.ttf', 18)
+        self.font = pygame.font.Font(os.path.join(base_path, 'dialog_font.ttf'), 18)
         self.reading = False
         
     def execute(self, dialog=[]):

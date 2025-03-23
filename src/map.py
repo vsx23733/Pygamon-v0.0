@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import pygame, pytmx, pyscroll
-
+import os
 from player import NPC
 
 @dataclass
@@ -99,7 +99,8 @@ class MapManager:
     
     def register_map(self, name, portals=[], npcs=[]):
       # charger la carte
-        tmx_data = pytmx.util_pygame.load_pygame(f"C:/Users/axelo\Documents/Projects/pygamon-main/map/{name}.tmx")  
+        base_path = os.path.join(os.path.dirname(__file__), '../map')
+        tmx_data = pytmx.util_pygame.load_pygame(os.path.join(base_path, f"{name}.tmx"))
         map_data = pyscroll.data.TiledMapData(tmx_data) 
         map_layer = pyscroll.orthographic.BufferedRenderer(map_data, self.screen.get_size())
         map_layer.zoom = 2
