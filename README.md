@@ -4,8 +4,6 @@ Pygamon is a 2D RPG game built using Python and Pygame. Immerse yourself in a re
 
 ## Project Structure
 
-## Table of Contents
-
 ```
 📦 
 ├─ README.md
@@ -47,6 +45,9 @@ Pygamon is a 2D RPG game built using Python and Pygame. Immerse yourself in a re
    ├─ map.py
    └─ player.py
 ```
+
+## Table of Contents
+
 
 ## Features
 - **Retro 2D Graphics:** Enjoy pixel art aesthetics reminiscent of classic RPGs.
