@@ -59,6 +59,8 @@ Pygamon is a 2D RPG game built using Python and Pygame. Immerse yourself in a re
 ### Prerequisites
 - Python 3.x
 - Pygame library
+- Pyscroll library
+- Pytmx library
 
 ### Clone the Repository
 ```
@@ -68,6 +70,9 @@ git clone https://github.com/vsx23733/Pygamon-v0.0.git
 ### Install dependencies
 ```
 python -m pip install pygame
+python -m pip install pygame
+python -m pip install pyscroll
+python -m pip install pytmx
 ```
 
 ### Usage
