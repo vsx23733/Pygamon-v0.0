@@ -1,12 +1,20 @@
+from typing import Mapping
 import pygame
-from src.game import Game
+from game import Game
 
-pygame.init()
+
+
 
 if __name__ == '__main__':
     pygame.init()
-    game = Game()
+    game=Game()
     game.run()
+
+
+
+
+
+
 
 
 
