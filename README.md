@@ -6,6 +6,48 @@ Pygamon is a 2D RPG game built using Python and Pygame. Immerse yourself in a re
 
 ## Table of Contents
 
+```
+📦 
+├─ README.md
+├─ dialogs
+│  ├─ dialog_box.png
+│  └─ dialog_font.ttf
+├─ map
+│  ├─ IceTileset.png
+│  ├─ RPG Nature Tileset Autumn.png
+│  ├─ dungeon.tmx
+│  ├─ dungeon.tsx
+│  ├─ house.png
+│  ├─ house.tmx
+│  ├─ house.tsx
+│  ├─ house2.tmx
+│  ├─ nature.tsx
+│  ├─ natureset.png
+│  ├─ tileset_dungeon.png
+│  └─ world.tmx
+├─ sprites
+│  ├─ boss.png
+│  ├─ paul.png
+│  ├─ player.png
+│  └─ robin.png
+└─ src
+   ├─ __pycache__
+   │  ├─ animation.cpython-310.pyc
+   │  ├─ dialog.cpython-310.pyc
+   │  ├─ game.cpython-310.pyc
+   │  ├─ game.cpython-39.pyc
+   │  ├─ map.cpython-310.pyc
+   │  ├─ map.cpython-39.pyc
+   │  ├─ player.cpython-310.pyc
+   │  └─ player.cpython-39.pyc
+   ├─ animation.py
+   ├─ dialog.py
+   ├─ game.py
+   ├─ main.py
+   ├─ map.py
+   └─ player.py
+```
+
 ## Features
 - **Retro 2D Graphics:** Enjoy pixel art aesthetics reminiscent of classic RPGs.
 - **Exploration:** Traverse diverse environments and complete missions.
